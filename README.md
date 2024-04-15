@@ -10,6 +10,5 @@ Installs:
     - npm install koa-passport
     - npm install -g nodemon
     
-
 To run:
     - nodemon index.js
