@@ -8,3 +8,8 @@ Installs:
     - npm install koa-router
     - npm install koa-bodyparser
     - npm install koa-passport
+    - npm install -g nodemon
+    
+
+To run:
+    - nodemon index.js
