@@ -9,6 +9,10 @@ Installs:
     - npm install koa-bodyparser
     - npm install koa-passport
     - npm install -g nodemon
-    
+    - npm install promise-mysql
+    - npm install @koa/cors
+    - npm install bcrypt
+    - 
+
 To run:
     - nodemon index.js
