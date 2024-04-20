@@ -28,7 +28,7 @@ async function getAll(ctx) {
           ctx.status = 404;
     }
   } catch (error) {
-    console.error(`Error getting all users: ${error}`);
+    console.error(`Error getting all users: ${error.message}`);
     ctx.status = 500;
     ctx.body = {message: `Error `}
   }
@@ -52,7 +52,7 @@ async function getById(ctx) {
       ctx.status = 404;
     }
   } catch (error) {
-    console.error(`Error getting user by ID: ${error}`);
+    console.error(`Error getting user by ID: ${error.message}`);
     ctx.status = 500;
     ctx.body = {message: `Error getting user by ID`}
   }
@@ -112,7 +112,7 @@ async function updateUser(ctx) {
       }
     }
   } catch (error) {
-    console.error(`Error updating user: ${error}`);
+    console.error(`Error updating user: ${error.message}`);
     ctx.status = 500;
     ctx.body = {message: `Error updating user`, updated: false};
   }
@@ -139,7 +139,7 @@ async function deleteUser(ctx) {
         ctx.status = 404;
       }
     } catch (error) {
-      console.error(`Error deleting user: ${error}`);
+      console.error(`Error deleting user: ${error.message}`);
       ctx.status = 500;
       ctx.body = {message: `Error deleting user`, deleted: false};
     }
