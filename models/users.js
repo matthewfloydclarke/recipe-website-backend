@@ -40,6 +40,12 @@ exports.delById = async function delById (id) {
   return data;
 }
 
+exports.delAllUsers = async function delAllUsers () {
+  const query = "DELETE FROM users WHERE userRole = 'user';";
+  const data = await db.run_query(query);
+  return data;
+}
+
 
 exports.update = async function update (user) {
   const query = "UPDATE users SET ? WHERE ID = ?;";
