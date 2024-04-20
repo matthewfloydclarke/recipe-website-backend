@@ -10,6 +10,6 @@ exports.run_query = async function run_query(query, values) {
     return data;
   } catch (error) {
     console.error(error, query, values);
-    throw 'Database query error'
+    throw error
   }
 }
